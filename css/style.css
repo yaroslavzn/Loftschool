@@ -186,6 +186,7 @@ li {
   top: 90px;
   left: 100%;
   margin-left: -65px;
+  z-index: 10;
 }
 
 .points__item {
@@ -229,4 +230,147 @@ li {
   left: 50%;
   transform: translateX(-50%);
   margin-top: -58px;
+}
+
+/* About */
+
+.about {
+  min-height: 650px;
+  height: 100vh;
+  background-image: url('../img/about-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 75px;
+}
+
+.about .section-title {
+  text-align: center;
+  color: #2f3234;
+  margin-bottom: 90px;
+}
+
+.features__list {
+  padding: 0;
+}
+
+.features__item {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.features__item:last-child {
+  margin-right: 0;
+}
+
+.features__pic {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.features__img {
+  display: inline-block;
+}
+
+.features__title {
+  font-family: Lifehack;
+  font-size: 24px;
+  text-align: center;
+  color: #2f3234;
+  margin-bottom: 24px;
+}
+
+.features__desc {
+  font-family: ubuntulight;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2f3234;
+  text-align: center;
+
+}
+
+/* Reviews */
+
+.reviews {
+  min-height: 650px;
+  height: 100vh;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__item {
+  width: 25%;
+  height: 50vh;
+  position: relative;
+  float: left;
+}
+
+.reviews__item1 {
+  background-image: url('../img/reviews-photo1.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.reviews__pic {
+  height: 100%;
+}
+
+.reviews__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 45px 20px;
+  background-color: rgba(20,20,20, .7);
+  visibility: hidden;
+}
+
+.reviews__item:hover .reviews__desc {
+  visibility: visible;
+}
+
+.reviews__name {
+  margin: 0;
+  font-family: Gagalin;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.reviews__text {
+  margin-bottom: 20px;
+}
+
+.reviews__text p {
+  font-family: ubuntulight;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.reviews__btn {
+  font-family: ubuntumedium;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #2f3234;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.reviews__btn:hover {
+  background-color: #1f2122;
 }

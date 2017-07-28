@@ -51,14 +51,21 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 12px;
 }
 
 .main-header .container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav {
-  padding-top: 12px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 70px;
 }
 
 .logo {
@@ -66,6 +73,7 @@ li {
   display: block;
   max-width: 92px;
   float: left;
+  margin-right: auto;
 }
 
 .logo-img {
@@ -80,7 +88,6 @@ li {
   float: right;
   width: 507px;
   margin-right: 15px;
-  margin-top: 19px;
 }
 
 .nav__item {
@@ -118,6 +125,12 @@ li {
   font-size: 13px;
   line-height: 30px;
   display: block;
+  border-bottom: 1px solid transparent;
+  transition: all .2s;
+}
+
+.nav__link:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .order-btn {
@@ -132,7 +145,7 @@ li {
   text-align: center;
   border-radius: 5px;
   padding: 10px 0;
-  margin-top: 17px;
+  transition: all .2s;
 }
 
 .order-btn:hover {
@@ -141,14 +154,17 @@ li {
 
 .header-promo {
   padding-left: 15px;
-  margin-bottom: 100px;
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  align-items: center;
+  padding-bottom: 17%;
 }
 
 .header-promo__pic {
   float: left;
   width: 450px;
   margin-right: 15px;
-  margin-top: -5px;
 }
 
 .header-promo__img {
@@ -241,7 +257,12 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 63px;
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about .section-title {
@@ -252,6 +273,7 @@ li {
 
 .features__list {
   padding: 0;
+  margin: 0;
 }
 
 .features__item {
@@ -310,21 +332,13 @@ li {
   float: left;
 }
 
-.reviews__item1 {
-  background-image: url('../img/reviews-photo1.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
 
 .reviews__pic {
   height: 100%;
-}
-
-.reviews__img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  background-position: center center;
 }
 
 .reviews__desc {

@@ -13,6 +13,12 @@
   height: 50vh;
   position: relative;
   float: left;
+  &:hover {
+    .reviews__desc {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 }
 
 
@@ -35,11 +41,6 @@
   opacity: 0;
   transition: all .2s;
   transform: scale(0.7);
-}
-
-.reviews__item:hover .reviews__desc {
-  opacity: 1;
-  transform: scale(1);
 }
 
 .reviews__name {
@@ -70,8 +71,7 @@
   background-color: #2f3234;
   padding: 10px 15px;
   border-radius: 5px;
-}
-
-.reviews__btn:hover {
-  background-color: #1f2122;
+  &:hover {
+    background-color: #1f2122;
+  }
 }

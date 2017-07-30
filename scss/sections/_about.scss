@@ -5,18 +5,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  .section-title {
+    text-align: center;
+    color: #2f3234;
+    margin-bottom: 70px;
+  }
 }
 
 .about__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.about .section-title {
-  text-align: center;
-  color: #2f3234;
-  margin-bottom: 70px;
 }
 
 .features__list {
@@ -28,10 +27,9 @@
   width: 300px;
   float: left;
   margin-right: 20px;
-}
-
-.features__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .features__pic {

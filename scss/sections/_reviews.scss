@@ -1,0 +1,77 @@
+.reviews {
+  min-height: 650px;
+  height: 100vh;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__item {
+  width: 25%;
+  height: 50vh;
+  position: relative;
+  float: left;
+}
+
+
+.reviews__pic {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  background-position: center center;
+}
+
+.reviews__desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 45px 20px;
+  background-color: rgba(20,20,20, .7);
+  opacity: 0;
+  transition: all .2s;
+  transform: scale(0.7);
+}
+
+.reviews__item:hover .reviews__desc {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.reviews__name {
+  margin: 0;
+  font-family: Gagalin;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.reviews__text {
+  margin-bottom: 20px;
+}
+
+.reviews__text p {
+  font-family: ubuntulight;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.reviews__btn {
+  font-family: ubuntumedium;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #2f3234;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.reviews__btn:hover {
+  background-color: #1f2122;
+}

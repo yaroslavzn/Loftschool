@@ -473,6 +473,11 @@ li {
     flex-direction: column;
     justify-content: center; }
 
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
 .nav {
   display: flex;
   justify-content: flex-start;
@@ -575,7 +580,8 @@ li {
   font-family: Gagalin;
   color: #f9b43b;
   margin: 0;
-  margin-bottom: 13px; }
+  margin-bottom: 13px;
+  font-weight: 300; }
 
 .section-subtitle {
   font-family: Lifehack;
@@ -686,7 +692,8 @@ li {
 
 .reviews__list {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: 100%; }
 
 .reviews__item {
   width: 25%;

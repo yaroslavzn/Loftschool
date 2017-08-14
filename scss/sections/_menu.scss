@@ -3,4 +3,88 @@
     height: 100vh;
     background: url('../img/menu-bg.jpg') center center no-repeat;
     background-size: cover;
+    position: relative;
+
+    .section-title--white {
+        color: $white;
+        position: absolute;
+        top: 110px;
+        left: 95px;
+    }
+}
+
+.menu-acco {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    display: flex;
+    height: 100vh;
+    &--active {
+        .menu__item-text {
+            display: block;
+        }
+    }
+}
+
+.menu__item--meat {
+    .menu__item-title {
+        background-image: url('../img/meat-acco.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.menu__item--vegan {
+    .menu__item-title {
+        background-image: url('../img/vegan-acco.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.menu__item--diet {
+    .menu__item-title {
+        background-image: url('../img/diet-acco.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.menu__item-title {
+    width: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu__item-title-text {
+    font-family: gagalin;
+    font-size: 40px;
+    color: $white;
+    position: absolute;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+
+.menu__item-text {
+    display: none;
+    width: 540px;
+    background-color: rgba(#2f3234, .93);
+    padding: 60px 30px;
+    p {
+        font-family: ubuntulight;
+        font-size: 14px;
+        color: $white;
+    }
 }

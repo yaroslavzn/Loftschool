@@ -264,8 +264,55 @@
       </section>
       <!-- Menu -->
       <section class="menu">
-        <div class="container">
-          <div class="section-title">Меню</div>
+        <div class="section-title section-title--white">Меню</div>
+        <div class="menu-acco">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--meat menu__item--active">
+              <div class="menu__item-title">
+                <div class="menu__item-title-text">
+                  Для мясоедов
+                </div>
+              </div>
+              <div class="menu__item-text">
+                <p>
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                </p>
+                <p>
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                </p>
+              </div>
+            </li>
+            <li class="menu__item menu__item--vegan">
+              <div class="menu__item-title">
+                <div class="menu__item-title-text">
+                  Вегетарианское
+                </div>
+              </div>
+              <div class="menu__item-text">
+                <p>
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                </p>
+                <p>
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                </p>
+              </div>
+            </li>
+            <li class="menu__item menu__item--diet">
+              <div class="menu__item-title">
+                <div class="menu__item-title-text">
+                  Диетическое
+                </div>
+              </div>
+              <div class="menu__item-text">
+                <p>
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+                </p>
+                <p>
+                  Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- Reviews  -->
@@ -384,6 +431,86 @@
             </div>
           </li>
         </ul>
+      </section>
+      <!-- Order -->
+      <section class="order">
+        <div class="container">
+          <div class="section-title">Закажите доставку</div>
+          <form  class="order-form">
+            <div class="order-form__right">
+              <div class="order-form__row">
+                <div class="order-form__input-wrap order-form__input-wrap--half">
+                  <label for="name">Имя</label>
+                  <input type="text" name="name" class="order-form__input" id="name">
+                </div>
+                <div class="order-form__input-wrap">
+                  <label for="phone">Телефон</label>
+                  <input type="tel" name="phone" class="order-form__input" id="phone">
+                </div>
+              </div>
+              <div class="order-form__row">
+                <div class="order-form__input-wrap">
+                  <label for="street">Улица</label>
+                  <input type="text" name="street" class="order-form__input" id="street">
+                </div>
+              </div>
+              <div class="order-form__row">
+                <div class="order-form__input-wrap">
+                  <label for="house">Дом</label>
+                  <input type="text" name="house" class="order-form__input" id="house">
+                </div>
+                <div class="order-form__input-wrap">
+                  <label for="housing">Корпус</label>
+                  <input type="text" name="housing" class="order-form__input" id="housing">
+                </div>
+                <div class="order-form__input-wrap">
+                  <label for="room">Квартира</label>
+                  <input type="text" name="room" class="order-form__input" id="room">
+                </div>
+                <div class="order-form__input-wrap">
+                  <label for="floor">Этаж</label>
+                  <input type="text" name="floor" class="order-form__input" id="floor">
+                </div>
+              </div>
+            </div>
+            <div class="order-form__left">
+              <div class="order-form__row">
+                <div class="order-form__input-wrap">
+                  <label for="comment">Комментарий</label>
+                  <textarea id="comment" class="order-form__comment"></textarea>
+                </div>
+              </div>
+              <div class="order-form__row">
+                <div class="order-form__input-wrap order-form__input-wrap--checks">
+                  <label>
+                    <input type="radio" name="calculation" class="order-form__radio">
+                    <span class="fake-radio"></span>
+                    <span class="label-text">Потребуется сдача</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="calculation" class="order-form__radio" checked>
+                    <span class="fake-radio"></span>
+                    <span class="label-text">Оплата по карте</span>
+                  </label>
+                </div>
+              </div>
+              <div class="order-form__row">
+                <div class="order-form__input-wrap order-form__input-wrap--checks">
+                  <label>
+                    <input type="checkbox" class="order-form__checkbox" checked>
+                    <span class="fake-checkbox"></span>
+                    <span class="label-text">Не перезванивать</span>
+                  </label>
+                </div>
+              </div>
+              <div class="order-form__row order-form__row--btns">
+                <button type="button" class="order-btn order-form__btn">Заказать</button>
+                <button type="reset" class="order-form__reset">Очистить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
       </section>
     </div>
   </div>

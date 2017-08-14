@@ -1,0 +1,66 @@
+.main-footer {
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container {
+        display: flex;
+        min-height: 58px;
+        align-items: center;
+    }
+}
+
+.footer__contacts {
+    margin-right: auto;
+}
+
+.footer__address {
+    font-family: ubuntulight;
+    color: $white;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer__phone {
+    display: flex;
+    align-items: center;
+}
+
+.footer__phone-ico {
+    fill: $red;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.footer__phone-text {
+    font-family: ubuntubold;
+    font-size: 14px;
+    line-height: 24px;
+    color: $red;
+}
+
+.footer__social-list {
+    display: flex;
+}
+
+.footer__social-item {
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.footer__social-link {
+    &:hover {
+        .footer__social-ico {
+            fill: $white;
+        }
+    }
+}
+
+.footer__social-ico {
+    width: 20px;
+    height: 20px;
+    fill: rgba($white, .3);
+    transition: all .2s;
+}

@@ -654,11 +654,11 @@ li {
 
 .features__list {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  display: flex; }
 
 .features__item {
   width: 300px;
-  float: left;
   margin-right: 20px; }
   .features__item:last-child {
     margin-right: 0; }

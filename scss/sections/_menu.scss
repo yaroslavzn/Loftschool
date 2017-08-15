@@ -85,7 +85,7 @@
     white-space: nowrap;
 
     @include tablets {
-        transform: rotate(-90deg) translateX(50%);
+        transform: rotate(-90deg) translate(50%);
     }
 }
 

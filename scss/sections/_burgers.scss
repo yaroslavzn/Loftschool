@@ -11,14 +11,33 @@
 }
 
 
+.burgers__list {
+    @include tablets {
+        width: rem(644px);
+        margin: 0 auto;
+    }
+}
+
 .burgers__item {
     display: flex;
     justify-content: space-between;
-    min-height: 472px;
+    min-height: rem(472px);
+
+    @include tablets {
+        flex-direction: column;
+    }
 }
 
 .burgers__item-left, .burgers__item-right {
     width: 48.93%;
+
+    @include tablets {
+        width: 100%;
+    }
+}
+
+.burgers__item-right {
+    text-align: center
 }
 
 .burgers__item-left {
@@ -26,14 +45,23 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include tablets {
+        flex-direction: row;
+        min-height: rem(390px);
+        width: rem(472px);
+        background-position: center bottom;
+        background-size: 100%;
+        margin: 0 auto;
+    }
 }
 
 
 
 .burger__consist {
-    width: 90px;
-    height: 90px;
-    padding: 5px;
+    width: rem(90px);
+    height: rem(90px);
+    padding: rem(5px);
     background-color: rgba($red, .4);
     border-radius: 5px;
     display: flex;
@@ -52,15 +80,15 @@
 }
 
 .burger__consist-pic {
-    width: 49px;
-    height: 45px;
+    width: rem(49px);
+    height: rem(45px);
     fill: $white;
 }
 
 .burger__consist-text {
     text-transform: uppercase;
     font-family: gagalin;
-    font-size: 14px;
+    font-size: rem(14px);
     color: $white;
 }
 
@@ -70,7 +98,7 @@
     top: 0;
     border-radius: 5px;
     overflow: hidden;
-    width: 270px;
+    width: rem(270px);
     display: block;
     cursor: default;
     &:after {
@@ -79,30 +107,30 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        width: 30px;
+        width: rem(30px);
         left: 0;
-        margin-left: -25px;
+        margin-left: rem(-25px);
     }
 }
 
 .burger__consist-list {
     background-color: rgba($white, .9);
-    padding: 18px 20px;
+    padding: rem(18px) rem(20px);
 }
 
 .burger__consist-item {
     display: flex;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
     &:last-child {
         margin-bottom: 0;
     }
 }
 
 .burger__consist-item-pic {
-    width: 45px;
-    height: 39px;
-    margin-right: 35px;
+    width: rem(45px);
+    height: rem(39px);
+    margin-right: rem(35px);
 }
 
 .burger__consist-item-pic--red {
@@ -118,18 +146,18 @@
 }
 
 .burger__consist-item-text {
-    font-size: 14px;
+    font-size: rem(14px);
     margin-right: auto;
 }
 
 .burger__consist-item-weight {
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: ubuntulight;
 }
 
 .burger__calories {
-    width: 60px;
-    height: 80px;
+    width: rem(60px);
+    height: rem(80px);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -140,40 +168,45 @@
 .burger__calories-pic {
     width: 100%;
     fill: rgba($white, .5);
-    width: 60px;
-    height: 60px;
+    width: rem(60px);
+    height: rem(60px);
     position: absolute;
 }
 
 .burger__calories-num {
     display: block;
     font-family: gagalin;
-    font-size: 20px;
+    font-size: rem(20px);
     color: rgba($white, .5);
-    margin-top: 30px;
+    margin-top: rem(30px);
 }
 
 .burger__calories-text {
     display: block;
     font-family: gagalin;
-    font-size: 14px;
+    font-size: rem(14px);
     color: rgba($white, .5);
 }
 
 .burgers__item-title {
-    font-size: 72px;
+    font-size: rem(72px);
     color: $white;
     font-family: gagalin;
     font-weight: 300;
-    line-height: 72px;
-    margin-bottom: 50px;
+    line-height: rem(72px);
+    margin-bottom: rem(50px);
+
+    @include tablets {
+        width: 75%;
+        margin: 0 auto;
+    }
 }
 
 .burgers__item-desc {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
     p {
-        font-size: 14px;
-        line-height: 24px;
+        font-size: rem(14px);
+        line-height: rem(24px);
         font-family: ubuntulight;
         color: $white;
     }
@@ -182,18 +215,29 @@
 .burgers__item-order {
     display: flex;
     align-items: flex-end;
+
+    @include tablets {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .order-btn {
+        @include tablets {
+            margin-top: rem(24px);
+        }
+    }
 }
 
 .burgers__item-price {
     font-family: gagalin;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: rem(30px);
+    line-height: rem(30px);
     color: $red;
     font-weight: 300;
-    margin-right: 30px;
+    margin-right: rem(30px);
 }
 
 .price-digit {
-    font-size: 72px;
-    line-height: 72px;
+    font-size: rem(72px);
+    line-height: rem(72px);
 }

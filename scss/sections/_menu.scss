@@ -8,8 +8,12 @@
     .section-title--white {
         color: $white;
         position: absolute;
-        top: 110px;
-        left: 95px;
+        top: rem(110px);
+        left: rem(95px);
+
+        @include tablets {
+            left: rem(24px);
+        }
     }
 }
 
@@ -60,31 +64,39 @@
 }
 
 .menu__item-title {
-    width: 80px;
+    width: rem(80px);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    @include tablets {
+        align-items: flex-end;
+    }
 }
 
 .menu__item-title-text {
     font-family: gagalin;
-    font-size: 40px;
+    font-size: rem(40px);
     color: $white;
     position: absolute;
     transform: rotate(-90deg);
     white-space: nowrap;
+
+    @include tablets {
+        transform: rotate(-90deg) translateX(50%);
+    }
 }
 
 .menu__item-text {
     display: none;
-    width: 540px;
+    width: rem(540px);
     background-color: rgba(#2f3234, .93);
-    padding: 60px 30px;
+    padding: rem(60px) rem(30px);
     p {
         font-family: ubuntulight;
-        font-size: 14px;
+        font-size: rem(14px);
         color: $white;
     }
 }

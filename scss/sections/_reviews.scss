@@ -11,7 +11,7 @@
 
 .reviews__item {
   width: 25%;
-  height: 50vh;
+  height: 50%;
   position: relative;
   float: left;
   &:hover {
@@ -19,6 +19,11 @@
       opacity: 1;
       transform: scale(1);
     }
+  }
+
+  @include tablets {
+    width: 50%;
+    height: 25%;
   }
 }
 
@@ -42,30 +47,44 @@
   opacity: 0;
   transition: all .2s;
   transform: scale(0.7);
+
+  @include tablets {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
 }
 
 .reviews__name {
   margin: 0;
   font-family: Gagalin;
-  font-size: 14px;
+  font-size: rem(14px);
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
+
+  @include tablets {
+    margin-bottom: 10px;
+  }
 }
 
 .reviews__text {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }
 
 .reviews__text p {
   font-family: ubuntulight;
   color: #fff;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: rem(14px);
+  line-height: rem(24px);
+  margin: 0;
 }
 
 .reviews__btn {
   font-family: ubuntumedium;
-  font-size: 13px;
+  font-size: rem(13px);
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;

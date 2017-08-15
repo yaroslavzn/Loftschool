@@ -4,7 +4,7 @@
     background-repeat: repeat-x;
     .container {
         display: flex;
-        min-height: 58px;
+        min-height: rem(58px);
         align-items: center;
     }
 }
@@ -16,8 +16,8 @@
 .footer__address {
     font-family: ubuntulight;
     color: $white;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
 }
 
 .footer__phone {
@@ -27,15 +27,15 @@
 
 .footer__phone-ico {
     fill: $red;
-    width: 12px;
-    height: 12px;
-    margin-right: 8px;
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(8px);
 }
 
 .footer__phone-text {
     font-family: ubuntubold;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(14px);
+    line-height: rem(24px);
     color: $red;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .footer__social-item {
-    margin-right: 20px;
+    margin-right: rem(20px);
     &:last-child {
         margin-right: 0;
     }
@@ -59,8 +59,8 @@
 }
 
 .footer__social-ico {
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     fill: rgba($white, .3);
     transition: all .2s;
 }

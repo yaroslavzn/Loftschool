@@ -25,6 +25,11 @@
   justify-content: flex-start;
   align-items: center;
   min-height: 70px;
+
+  @include tablets {
+    position: absolute;
+    right: -9999px;
+  }
 }
 
 .logo {
@@ -102,6 +107,30 @@
   &:hover {
     background-color: #c1401e;
   }
+
+  @include tablets {
+    margin-right: 30px;
+  }
+}
+
+.burger {
+  height: 22px;
+  width: 24px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablets {
+    display: flex;
+  }
+}
+
+.burger__line {
+  width: 24px;
+  height: 4px;
+  background-color: $white;
+  display: block;
+  border-radius: 3px;
 }
 
 .header-promo {
@@ -111,12 +140,22 @@
   flex-grow: 1;
   align-items: center;
   padding-bottom: 17%;
+
+  @include tablets {
+    flex-direction: column;
+    padding-left: 0;
+    justify-content: center;
+  }
 }
 
 .header-promo__pic {
-  float: left;
   width: rem(450px);
   margin-right: rem(15px);
+
+  @include tablets {
+    margin-bottom: rem(30px);
+    width: 58.59%;
+  }
 }
 
 .header-promo__img {
@@ -125,9 +164,13 @@
 }
 
 .header-promo__text {
-  float: left;
   width: rem(405px);
   margin-top: rem(130px);
+  
+  @include tablets {
+    text-align: center;
+    margin-top: 0;
+  }
 }
 
 .section-title {
@@ -156,6 +199,10 @@
   left: 100%;
   margin-left: rem(-65px);
   z-index: 10;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .points__item {

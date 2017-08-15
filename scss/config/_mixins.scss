@@ -4,9 +4,3 @@
     border-radius: $width/2;
     background-color: $color;
 }
-
-// Responsive
-
-@function rem($px) {
-    @return $px / 16px + 0rem;
-}

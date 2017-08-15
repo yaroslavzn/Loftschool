@@ -4,6 +4,16 @@ body {
   height: 100%;
 }
 
+html {
+  @include tablets {
+    font-size: 15px;
+  }
+
+  @include phones {
+    font-size: 13px;
+  }
+}
+
 body {
   font-family: ubunturegular;
 }

@@ -3,9 +3,16 @@
 @import "config/_variables";
 @import "config/_mixins";
 
-// Layout
+// normalize
 
 @import "../libs/normalize";
+
+// Media
+
+@import "media";
+
+// Layout
+
 @import "layout/_fonts";
 @import "layout/_base";
 @import "layout/_adjustment";

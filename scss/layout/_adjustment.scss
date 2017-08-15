@@ -1,11 +1,15 @@
 .wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-content {
   height: 100%;
   width: 100%;
-  min-width: 960px;
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 0 10px;
   height: 100%;

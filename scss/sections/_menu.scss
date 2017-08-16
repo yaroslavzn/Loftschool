@@ -14,6 +14,11 @@
         @include tablets {
             left: rem(24px);
         }
+
+        @include phones {
+            left: rem(60px);
+            top: rem(60px);
+        }
     }
 }
 

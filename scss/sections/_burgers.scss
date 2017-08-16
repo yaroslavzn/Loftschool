@@ -54,6 +54,13 @@
         background-size: 100%;
         margin: 0 auto;
     }
+
+    @include phones {
+        width: 100%;
+        min-height: rem(360px);
+        background-size: 85%;
+        margin-bottom: rem(35px);
+    }
 }
 
 

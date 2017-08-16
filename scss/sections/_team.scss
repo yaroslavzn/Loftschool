@@ -77,6 +77,10 @@
     @include tablets {
         justify-content: center;
     }
+
+    @include phones {
+        font-size: rem(25px);
+    }
 }
 
 .team__user-content {

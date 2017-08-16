@@ -155,6 +155,11 @@
   @include tablets {
     margin-bottom: rem(30px);
     width: 58.59%;
+    margin-right: 0;
+  }
+
+  @include phones {
+    width: 85%;
   }
 }
 
@@ -171,6 +176,18 @@
     text-align: center;
     margin-top: 0;
   }
+
+  .section-title {
+    @include phones {
+      font-size: rem(63px);
+    }
+  }
+
+  .section-subtitle {
+    @include phones {
+      font-size: rem(54px);
+    }
+  }
 }
 
 .section-title {
@@ -181,6 +198,10 @@
   margin: 0;
   margin-bottom: rem(13px);
   font-weight: 300;
+
+  @include phones {
+    font-size: rem(60px);
+  }
 }
 
 .section-subtitle {

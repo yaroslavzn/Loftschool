@@ -22,6 +22,10 @@
   padding: 0;
   margin: 0;
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .features__item {
@@ -30,16 +34,62 @@
   &:last-child {
     margin-right: 0;
   }
+
+  @include phones {
+    display: flex;
+    width: 100%;
+    margin-bottom: rem(50px);
+    margin-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .features__pic {
   text-align: center;
   margin-bottom: rem(30px);
   height: rem(90px);
+  
+  svg {
+    width: rem(100px);
+    height: rem(90px);
+  }
+
+  @include phones {
+    margin-right: rem(28px);
+    margin-bottom: 0;
+  }
+}
+
+.features__pic--red {
+  svg {
+    fill: $red;
+  }
+}
+
+.features__pic--yellow {
+  svg {
+    fill: $yellow;
+  }
+}
+
+.features__pic--green {
+  svg {
+    fill: $green;
+  }
 }
 
 .features__img {
   display: inline-block;
+}
+
+.features__content {
+  @include phones {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .features__title {
@@ -48,6 +98,10 @@
   text-align: center;
   color: #2f3234;
   margin-bottom: rem(14px);
+
+  @include phones {
+    text-align: left;
+  }
 }
 
 .features__desc {
@@ -56,5 +110,8 @@
   line-height: rem(24px);
   color: rgba(#2f3234, .8);
   text-align: center;
-
+  
+  @include phones {
+    text-align: left;
+  }
 }

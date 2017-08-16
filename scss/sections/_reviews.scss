@@ -72,6 +72,9 @@
 
 .reviews__text {
   margin-bottom: rem(20px);
+  @include phones {
+    display: none;
+  }
 }
 
 .reviews__text p {

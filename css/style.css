@@ -521,11 +521,23 @@ li {
       position: absolute;
       right: -9999px; } }
 
+.nav--active {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(47, 50, 52, 0.99);
+  z-index: 5; }
+
 .logo {
   font-size: 0;
   display: block;
   width: 5.75rem;
   margin-right: auto; }
+
+.logo--active {
+  z-index: 10; }
 
 .logo-img {
   width: 100%;
@@ -535,9 +547,19 @@ li {
   list-style: none;
   padding: 0;
   margin: 0;
-  float: right;
   width: 31.6875rem;
   margin-right: 0.9375rem; }
+  @media screen and (max-width: 768px) {
+    .nav__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%;
+      margin-right: 0; } }
 
 .nav__item {
   float: left;
@@ -560,6 +582,14 @@ li {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     margin-left: 0.9375rem; }
+    @media screen and (max-width: 768px) {
+      .nav__item::after {
+        position: static;
+        margin: 1.5625rem auto; } }
+  @media screen and (max-width: 768px) {
+    .nav__item {
+      text-align: center;
+      margin-right: 0; } }
 
 .nav__link {
   color: #fff;
@@ -573,6 +603,10 @@ li {
   transition: all .2s; }
   .nav__link:hover {
     border-bottom: 1px solid #fff; }
+  @media screen and (max-width: 768px) {
+    .nav__link {
+      font-size: 1.5rem;
+      display: inline-block; } }
 
 .order-btn {
   color: #fff;
@@ -603,12 +637,33 @@ li {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  cursor: pointer; }
   @media screen and (max-width: 768px) {
     .burger {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
+
+.burger--active {
+  z-index: 10;
+  position: relative; }
+  .burger--active .burger__line {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background-color: #c1c2c2;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+    .burger--active .burger__line:nth-child(2) {
+      display: none; }
+    .burger--active .burger__line:nth-child(1) {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .burger--active .burger__line:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
 
 .burger__line {
   width: 24px;

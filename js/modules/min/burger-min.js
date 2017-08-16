@@ -1,0 +1,1 @@
+$(document).ready(function(){var o=$(".burger"),a=$(".nav"),e=$(".logo");o.on("click",function(){a.toggleClass("nav--active"),o.toggleClass("burger--active"),e.toggleClass("logo--active")})});

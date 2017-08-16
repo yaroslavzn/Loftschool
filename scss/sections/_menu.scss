@@ -25,15 +25,19 @@
 .menu-acco {
     display: flex;
     justify-content: flex-end;
+    height: 100%;
 }
 
 .menu__list {
     display: flex;
+    min-height: 650px;
+    height: 100%;
 }
 
 .menu__item {
     display: flex;
-    height: 100vh;
+    height: 100%;
+    min-height: 650px;
     &--active {
         .menu__item-text {
             display: block;

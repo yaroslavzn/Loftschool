@@ -1357,18 +1357,22 @@ li {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  height: 100%; }
 
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  min-height: 650px;
+  height: 100%; }
 
 .menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh; }
+  height: 100%;
+  min-height: 650px; }
   .menu__item--active .menu__item-text {
     display: block; }
 

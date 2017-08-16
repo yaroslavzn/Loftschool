@@ -1,6 +1,6 @@
 .order {
-    min-height: 650px;
-    height: 100%;
+    min-height: rem(650px);
+    height: 100vh;
     background-image: url('../img/order-bg.jpg');
     background-color: $black;
     background-position: center;
@@ -11,7 +11,8 @@
         margin-bottom: rem(80px);
 
         @include phones {
-            margin-bottom: rem(40px);
+            margin-bottom: rem(20px);
+            line-height: 1;
         }
     }
 
@@ -19,6 +20,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    @include phones {
+        padding: rem(20px) 0;
     }
 }
 
@@ -87,6 +92,10 @@
     border-radius: 5px;
     border: 1px solid rgb(209, 207, 203);
     padding: rem(10px);
+
+    @include phones {
+        padding: rem(5px);
+    }
 }
 
 .order-form__input-wrap--checks {
@@ -103,7 +112,6 @@
 
     @include phones {
         justify-content: center;
-        margin-bottom: rem(35px);
     }
 }
 

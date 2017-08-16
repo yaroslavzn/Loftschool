@@ -1,13 +1,17 @@
 .team {
-    min-height: 650px;
+    min-height: rem(650px);
     height: 100vh;
     background: url('../img/team-bg.jpg') center center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: flex-end;
     .section-title {
-        margin-bottom: 90px;
+        margin-bottom: rem(90px);
         text-align: center;
+
+        @include phones {
+            margin-bottom: rem(45px);
+        }
     }
 }
 

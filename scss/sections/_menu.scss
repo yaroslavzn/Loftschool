@@ -1,5 +1,5 @@
 .menu {
-    min-height: 650px;
+    min-height: rem(650px);
     height: 100vh;
     background: url('../img/menu-bg.jpg') center center no-repeat;
     background-size: cover;
@@ -30,14 +30,12 @@
 
 .menu__list {
     display: flex;
-    min-height: 650px;
     height: 100%;
 }
 
 .menu__item {
     display: flex;
     height: 100%;
-    min-height: 650px;
     &--active {
         .menu__item-text {
             display: block;

@@ -1,5 +1,5 @@
 .about {
-  min-height: 650px;
+  min-height: rem(650px);
   height: 100vh;
   background-image: url('../img/about-bg.jpg');
   background-repeat: no-repeat;
@@ -9,6 +9,10 @@
     text-align: center;
     color: #2f3234;
     margin-bottom: rem(70px);
+
+    @include phones {
+      margin-bottom: rem(30px);
+    }
   }
 }
 
@@ -38,7 +42,7 @@
   @include phones {
     display: flex;
     width: 100%;
-    margin-bottom: rem(50px);
+    margin-bottom: rem(25px);
     margin-right: 0;
 
     &:last-child {

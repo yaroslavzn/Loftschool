@@ -501,6 +501,9 @@ li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
+  @media screen and (max-width: 768px) {
+    .nav-wrap {
+      min-height: 65px; } }
 
 .nav {
   display: -webkit-box;

@@ -36,8 +36,8 @@
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
   top: 0;
+  bottom: 0;
   background-color: rgba(#2f3234, .99);
   z-index: 5;
 }
@@ -155,6 +155,7 @@
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 
   @include tablets {
     display: flex;

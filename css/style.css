@@ -522,8 +522,8 @@ li {
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
   top: 0;
+  bottom: 0;
   background-color: rgba(47, 50, 52, 0.99);
   z-index: 5; }
 
@@ -634,7 +634,8 @@ li {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  cursor: pointer; }
   @media screen and (max-width: 768px) {
     .burger {
       display: -webkit-box;

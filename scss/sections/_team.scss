@@ -64,9 +64,21 @@
     color: $white;
     font-size: rem(14px);
     line-height: rem(28px);
-    display: flex;
-    align-items: center;
     margin-bottom: rem(15px);
+
+    @include tablets {
+        justify-content: center;
+    }
+
+    @include phones {
+        font-size: rem(25px);
+    }
+}
+
+.team__title-text {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
     &:before {
         display: block;
         content: '';
@@ -76,14 +88,6 @@
         height: 0;
         border-bottom: none;
         margin-right: 10px;
-    }
-
-    @include tablets {
-        justify-content: center;
-    }
-
-    @include phones {
-        font-size: rem(25px);
     }
 }
 
@@ -99,8 +103,9 @@
 }
 
 .team__user-ava {
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    flex-basis: rem(100px);
+    height: rem(100px);
     border-radius: 50%;
     overflow: hidden;
     background-repeat: no-repeat;

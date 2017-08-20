@@ -1316,9 +1316,9 @@ li {
     .team__acco-item {
       text-align: center; } }
 
-.team__acco-item--active .team__user-title {
+.team__acco-item--active .team__title-text {
   color: #f9b43b; }
-  .team__acco-item--active .team__user-title:before {
+  .team__acco-item--active .team__title-text:before {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 .team__acco-item--active .team__user-content {
@@ -1363,7 +1363,15 @@ li {
     width: 0;
     height: 0;
     border-bottom: none;
-    margin-right: 10px; }
+    margin-right: 10px;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+
+.team__user-content-wrap {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
 
 .team__user-content {
   display: -webkit-box;
@@ -1372,8 +1380,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 1rem;
-  display: none; }
+  padding-left: 1rem; }
   @media screen and (max-width: 768px) {
     .team__user-content {
       padding-left: 0; } }

@@ -1536,6 +1536,7 @@ li {
   transition: all .3s; }
 
 .menu__item-text {
+  height: 100%;
   width: 33.75rem;
   padding: 3.75rem 1.875rem; }
   .menu__item-text p {

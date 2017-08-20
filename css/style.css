@@ -1448,14 +1448,34 @@ li {
   display: -ms-flexbox;
   display: flex;
   height: 100%; }
+  @media screen and (max-width: 480px) {
+    .menu__list {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      width: 100%; } }
 
 .menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%; }
-  .menu__item--active .menu__item-text {
-    display: block; }
+  height: 100%;
+  z-index: 10; }
+  @media screen and (max-width: 480px) {
+    .menu__item {
+      width: 13%;
+      -webkit-transition: all .3s;
+      transition: all .3s; } }
+
+@media screen and (max-width: 480px) {
+  .menu__item--active {
+    width: 74%; }
+    .menu__item--active .menu__item-title {
+      width: 26%; }
+    .menu__item--active .menu__item-text {
+      width: 100%; } }
+.menu__item--active .menu__item-title-text {
+  color: #f9b43b; }
 
 .menu__item--meat .menu__item-title {
   background-image: url("../img/meat-acco.jpg");
@@ -1508,10 +1528,15 @@ li {
       -webkit-transform: rotate(-90deg) translate(50%);
               transform: rotate(-90deg) translate(50%); } }
 
-.menu__item-text {
-  display: none;
-  width: 33.75rem;
+.menu__item-text-wrap {
+  width: 0;
+  overflow: hidden;
   background-color: rgba(47, 50, 52, 0.93);
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+.menu__item-text {
+  width: 33.75rem;
   padding: 3.75rem 1.875rem; }
   .menu__item-text p {
     font-family: ubuntulight;

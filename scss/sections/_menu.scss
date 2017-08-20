@@ -31,15 +31,36 @@
 .menu__list {
     display: flex;
     height: 100%;
+    @include phones {
+        justify-content: flex-end;
+        width: 100%;
+    }
 }
 
 .menu__item {
     display: flex;
     height: 100%;
-    &--active {
-        .menu__item-text {
-            display: block;
+    z-index: 10;
+    @include phones {
+        width: 13%;
+        transition: all .3s;
+    }
+}
+
+.menu__item--active {
+    @include phones {
+        width: 74%;
+
+        .menu__item-title {
+            width: 26%;
         }
+
+        .menu__item-text {
+            width: 100%;
+        }
+    }
+    .menu__item-title-text {
+        color: $yellow;
     }
 }
 
@@ -96,10 +117,15 @@
     }
 }
 
-.menu__item-text {
-    display: none;
-    width: rem(540px);
+.menu__item-text-wrap {
+    width: 0;
+    overflow: hidden;
     background-color: rgba(#2f3234, .93);
+    transition: all .3s;
+}
+
+.menu__item-text {
+    width: rem(540px);
     padding: rem(60px) rem(30px);
     p {
         font-family: ubuntulight;

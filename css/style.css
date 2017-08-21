@@ -920,21 +920,29 @@ li {
             align-items: center; }
 
 .burgers__list-wrap {
-  position: relative; }
+  position: relative;
+  width: 100%;
+  min-height: 472px;
+  overflow: hidden; }
 
-@media screen and (max-width: 768px) {
-  .burgers__list {
-    width: 40.25rem;
-    margin: 0 auto; } }
+.burgers__list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap; }
+  @media screen and (max-width: 768px) {
+    .burgers__list {
+      margin: 0 auto; } }
 
 .burgers__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 29.5rem; }
+  min-height: 29.5rem;
+  white-space: normal; }
   @media screen and (max-width: 768px) {
     .burgers__item {
       -webkit-box-orient: vertical;

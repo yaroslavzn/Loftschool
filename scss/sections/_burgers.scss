@@ -13,20 +13,26 @@
 
 .burgers__list-wrap {
     position: relative;
+    width: 100%;
+    min-height: 472px;
+    overflow: hidden;
 }
 
 .burgers__list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
     @include tablets {
-        width: rem(644px);
         margin: 0 auto;
     }
 }
 
 .burgers__item {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     min-height: rem(472px);
-
+    white-space: normal;
     @include tablets {
         flex-direction: column;
     }

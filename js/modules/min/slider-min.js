@@ -1,0 +1,1 @@
+$(function(){var n=$(".burgers__list").bxSlider({pager:!1,controls:!1});$(".burgers__btn--prev").on("click",function(){n.goToPrevSlide()}),$(".burgers__btn--next").on("click",function(){n.goToNextSlide()})});

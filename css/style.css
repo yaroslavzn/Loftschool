@@ -919,6 +919,9 @@ li {
         -ms-flex-align: center;
             align-items: center; }
 
+.burgers__list-wrap {
+  position: relative; }
+
 @media screen and (max-width: 768px) {
   .burgers__list {
     width: 40.25rem;
@@ -1168,6 +1171,29 @@ li {
 .price-digit {
   font-size: 4.5rem;
   line-height: 4.5rem; }
+
+.burgers__btn {
+  display: block;
+  width: 15px;
+  height: 27px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.burgers__btn--prev {
+  background-image: url("../img/prev-btn.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: 100%;
+  margin-right: 20px; }
+
+.burgers__btn--next {
+  background-image: url("../img/next-btn.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 100%;
+  margin-left: 20px; }
 
 .reviews {
   min-height: 40.625rem;

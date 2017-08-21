@@ -8,7 +8,7 @@ $(document).ready(function() {
 		var items = item.siblings();
 		var itemsContent = items.find('.team__user-content-wrap');
 		var content = item.find('.team__user-content-wrap');
-		var reqHeight = content.find('.team__user-content').height();
+		var reqHeight = content.find('.team__user-content').outerHeight();
 
 
 		if (!item.hasClass('team__acco-item--active')) {
@@ -29,8 +29,10 @@ $(document).ready(function() {
 
 			content.css({
 				'height': 0
-			})
+			});
 
 		}
+
+		console.log(reqHeight);
 	});
 });

@@ -488,6 +488,12 @@ li {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
+<<<<<<< HEAD
+=======
+  @media screen and (max-width: 768px) {
+    .nav-wrap {
+      min-height: 65px; } }
+>>>>>>> master
 
 .nav {
   display: flex;
@@ -1246,11 +1252,14 @@ li {
   color: #f9b43b; }
   .team__acco-item--active .team__title-text:before {
     transform: rotate(180deg); }
+<<<<<<< HEAD
 .team__acco-item--active .team__user-content {
   display: flex; }
   @media screen and (max-width: 768px) {
     .team__acco-item--active .team__user-content {
       flex-direction: column; } }
+=======
+>>>>>>> master
 
 .team__user-title {
   font-family: gagalin;
@@ -1291,7 +1300,8 @@ li {
   padding-left: 1rem; }
   @media screen and (max-width: 768px) {
     .team__user-content {
-      padding-left: 0; } }
+      padding-left: 0;
+      flex-direction: column; } }
 
 .team__user-ava {
   width: 6.25rem;

@@ -50,13 +50,6 @@
             transform: rotate(180deg);
         }
     }
-
-    .team__user-content {
-        display: flex;
-        @include tablets {
-            flex-direction: column;
-        }
-    }
 }
 
 .team__user-title {
@@ -105,6 +98,7 @@
 
     @include tablets {
         padding-left: 0;
+        flex-direction: column;
     }
 }
 

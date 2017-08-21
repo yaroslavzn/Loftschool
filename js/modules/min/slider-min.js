@@ -1,1 +1,0 @@
-$(function(){$(".burgers__btn--next").on("click",function(e){e.preventDefault();var t=$(this),i=t.closest(".burgers__list-wrap"),n=i.find(".burgers__item"),r=n.filter("active"),s=r.next(),_=s.index(),f=i.find(".burgers__list"),l=500;f.animate({left:100*-_+"%"},l)})});

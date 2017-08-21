@@ -11,30 +11,21 @@
 }
 
 
-.burgers__list-wrap {
-    position: relative;
-    width: 100%;
-    min-height: 472px;
-    overflow: hidden;
-}
-
 .burgers__list {
-    position: absolute;
-    left: 0;
-    top: 0;
-    white-space: nowrap;
     @include tablets {
         margin: 0 auto;
     }
 }
 
 .burgers__item {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     min-height: rem(472px);
+    width: rem(940px);
     white-space: normal;
     @include tablets {
         flex-direction: column;
+        width: rem(748px);
     }
 }
 
@@ -266,29 +257,4 @@
 .price-digit {
     font-size: rem(72px);
     line-height: rem(72px);
-}
-
-.burgers__btn {
-    display: block;
-    width: 15px;
-    height: 27px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.burgers__btn--prev {
-    background-image: url('../img/prev-btn.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    right: 100%;
-    margin-right: 20px;
-}
-
-.burgers__btn--next {
-    background-image: url('../img/next-btn.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    left: 100%;
-    margin-left: 20px;
 }

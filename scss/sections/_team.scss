@@ -43,7 +43,7 @@
 }
 
 .team__acco-item--active {
-    .team__user-title {
+    .team__title-text {
         color: $yellow;
 
         &:before {
@@ -64,19 +64,7 @@
     color: $white;
     font-size: rem(14px);
     line-height: rem(28px);
-    display: flex;
-    align-items: center;
     margin-bottom: rem(15px);
-    &:before {
-        display: block;
-        content: '';
-        border: 5px solid transparent;
-        border-top-color: $yellow;
-        width: 0;
-        height: 0;
-        border-bottom: none;
-        margin-right: 10px;
-    }
 
     @include tablets {
         justify-content: center;
@@ -87,11 +75,33 @@
     }
 }
 
+.team__title-text {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    &:before {
+        display: block;
+        content: '';
+        border: 5px solid transparent;
+        border-top-color: $yellow;
+        width: 0;
+        height: 0;
+        border-bottom: none;
+        margin-right: 10px;
+        transition: all .2s;
+    }
+}
+
+.team__user-content-wrap {
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+}
+
 .team__user-content {
     display: flex;
     align-items: center;
     padding-left: rem(16px);
-    display: none;
 
     @include tablets {
         padding-left: 0;
@@ -99,8 +109,9 @@
 }
 
 .team__user-ava {
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    flex-basis: rem(100px);
+    height: rem(100px);
     border-radius: 50%;
     overflow: hidden;
     background-repeat: no-repeat;

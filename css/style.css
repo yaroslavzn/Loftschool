@@ -1319,9 +1319,9 @@ li {
     .team__acco-item {
       text-align: center; } }
 
-.team__acco-item--active .team__user-title {
+.team__acco-item--active .team__title-text {
   color: #f9b43b; }
-  .team__acco-item--active .team__user-title:before {
+  .team__acco-item--active .team__title-text:before {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
 .team__acco-item--active .team__user-content {
@@ -1340,22 +1340,7 @@ li {
   color: #fff;
   font-size: 0.875rem;
   line-height: 1.75rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 0.9375rem; }
-  .team__user-title:before {
-    display: block;
-    content: '';
-    border: 5px solid transparent;
-    border-top-color: #f9b43b;
-    width: 0;
-    height: 0;
-    border-bottom: none;
-    margin-right: 10px; }
   @media screen and (max-width: 768px) {
     .team__user-title {
       -webkit-box-pack: center;
@@ -1365,6 +1350,32 @@ li {
     .team__user-title {
       font-size: 1.5625rem; } }
 
+.team__title-text {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .team__title-text:before {
+    display: block;
+    content: '';
+    border: 5px solid transparent;
+    border-top-color: #f9b43b;
+    width: 0;
+    height: 0;
+    border-bottom: none;
+    margin-right: 10px;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+
+.team__user-content-wrap {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
 .team__user-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1372,15 +1383,16 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 1rem;
-  display: none; }
+  padding-left: 1rem; }
   @media screen and (max-width: 768px) {
     .team__user-content {
       padding-left: 0; } }
 
 .team__user-ava {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  -ms-flex-preferred-size: 6.25rem;
+      flex-basis: 6.25rem;
+  height: 6.25rem;
   border-radius: 50%;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -1439,14 +1451,34 @@ li {
   display: -ms-flexbox;
   display: flex;
   height: 100%; }
+  @media screen and (max-width: 480px) {
+    .menu__list {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      width: 100%; } }
 
 .menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%; }
-  .menu__item--active .menu__item-text {
-    display: block; }
+  height: 100%;
+  z-index: 10; }
+  @media screen and (max-width: 480px) {
+    .menu__item {
+      width: 13%;
+      -webkit-transition: all .3s;
+      transition: all .3s; } }
+
+@media screen and (max-width: 480px) {
+  .menu__item--active {
+    width: 74%; }
+    .menu__item--active .menu__item-title {
+      width: 26%; }
+    .menu__item--active .menu__item-text {
+      width: 100%; } }
+.menu__item--active .menu__item-title-text {
+  color: #f9b43b; }
 
 .menu__item--meat .menu__item-title {
   background-image: url("../img/meat-acco.jpg");
@@ -1499,10 +1531,16 @@ li {
       -webkit-transform: rotate(-90deg) translate(50%);
               transform: rotate(-90deg) translate(50%); } }
 
-.menu__item-text {
-  display: none;
-  width: 33.75rem;
+.menu__item-text-wrap {
+  width: 0;
+  overflow: hidden;
   background-color: rgba(47, 50, 52, 0.93);
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+.menu__item-text {
+  height: 100%;
+  width: 33.75rem;
   padding: 3.75rem 1.875rem; }
   .menu__item-text p {
     font-family: ubuntulight;

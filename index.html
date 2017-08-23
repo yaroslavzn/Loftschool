@@ -13,7 +13,7 @@
   <div class="wrapper">
     <div class="main-content">
       <!-- Header  -->
-      <header class="main-header">
+      <section class="main-header active-section">
         <div class="container">
           <div class="nav-wrap">
             <a href="#" class="logo">Mr.Burger
@@ -21,15 +21,15 @@
             </a>
             <nav class="nav">
               <ul class="nav__list clearfix">
-                <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Бургеры</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Команда</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Меню</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="1">О нас</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="2">Бургеры</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="3">Команда</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="4">Меню</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="5">Отзывы</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" data-scroll-to="7">Контакты</a></li>
               </ul>
             </nav>
-            <a href="#" class="order-btn">Заказать</a>
+            <a href="#" class="order-btn" data-scroll-to="6">Заказать</a>
             <div class="burger">
               <span class="burger__line"></span>
               <span class="burger__line"></span>
@@ -45,9 +45,9 @@
               <span class="section-subtitle">натуральные бургеры</span>
             </div>
           </div>
-          <a href="#" class="scroll-arrow"></a>
+          <a href="#" class="scroll-arrow" data-scroll-to="1"></a>
         </div>
-      </header>
+      </section>
       <!-- About  -->
       <section class="about">
         <div class="container about__container">
@@ -771,9 +771,9 @@
         
       </section>
       <!-- Map -->
-      <section id="map">
-      </section>
-      <footer class="main-footer">
+      <section class="map-wrap">
+        <div id="map"></div>
+        <footer class="main-footer">
         <div class="container">
           <div class="footer__contacts">
             <div class="footer__address">
@@ -820,17 +820,18 @@
           </div>
         </div>
       </footer>
+      </section>
     </div>
   </div>
   <ul class="points__list">
-    <li class="points__item points__item--active"><a href="#" class="points__link"></a></li>
-    <li class="points__item"><a href="#" class="points__link"></a></li>
-    <li class="points__item"><a href="#" class="points__link"></a></li>
-    <li class="points__item"><a href="#" class="points__link"></a></li>
-    <li class="points__item"><a href="#" class="points__link"></a></li>
-    <li class="points__item"><a href="#" class="points__link"></a></li>
-    <li class="points__item"><a href="#" class="points__link"></a></li>
-    <li class="points__item"><a href="#" class="points__link"></a></li>
+    <li class="points__item points__item--active"><a href="#" class="points__link" data-scroll-to="0"></a></li>
+    <li class="points__item"><a href="#" class="points__link" data-scroll-to="1"></a></li>
+    <li class="points__item"><a href="#" class="points__link" data-scroll-to="2"></a></li>
+    <li class="points__item"><a href="#" class="points__link" data-scroll-to="3"></a></li>
+    <li class="points__item"><a href="#" class="points__link" data-scroll-to="4"></a></li>
+    <li class="points__item"><a href="#" class="points__link" data-scroll-to="5"></a></li>
+    <li class="points__item"><a href="#" class="points__link" data-scroll-to="6"></a></li>
+    <li class="points__item"><a href="#" class="points__link" data-scroll-to="7"></a></li>
   </ul>
   <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5XVesVdtoOKVHdSJOA9E-TJW2I-1JMhI&callback=initMap">
@@ -841,6 +842,7 @@
   <script src="js/modules/team-accordeon.js"></script>
   <script src="js/modules/menu-accordeon.js"></script>
   <script src="js/modules/slider.js"></script>
+  <script src="js/modules/one-page-scroll.js"></script>
   <script src="js/script.js"></script>
 </body>
 

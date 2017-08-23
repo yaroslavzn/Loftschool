@@ -1,6 +1,6 @@
 .main-header {
   min-height: rem(650px);
-  height: 100vh;
+  height: 100%;
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -304,6 +304,7 @@
   &:last-child {
     margin-bottom: 0;
   }
+  transition: all .2s;
 }
 
 .points__item--active {

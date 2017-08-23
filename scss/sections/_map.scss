@@ -1,4 +1,10 @@
-#map {
+.map-wrap {
     min-height: 650px;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+	flex-grow: 1;
 }

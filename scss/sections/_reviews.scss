@@ -98,3 +98,49 @@
     background-color: #1f2122;
   }
 }
+
+.reviews__more-info {
+  padding: rem(30px) rem(20px);
+  width: rem(550px);
+  border-radius: 5px;
+  @include tablets {
+    width: rem(470px);
+  }
+
+  @include phones {
+    width: rem(320px);
+  }
+}
+
+.more-info__title {
+  font-family: gagalin;
+  font-size: rem(14px);
+  margin-bottom: 25px;
+  color: $black;
+}
+
+.more-info__desc {
+  p {
+    font-family: ubuntulight;
+    font-size: rem(14px);
+    color: $black;
+    margin: 0;
+  }
+}
+
+.fancybox-close-small {
+  &:focus {
+    &:after {
+      outline: none;
+    }
+  }
+  &:hover {
+    &:after {
+      color: darken($red, .2);
+      background: none;
+    }
+  }
+  &:after {
+    color: $red;
+  }
+}

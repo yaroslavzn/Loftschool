@@ -54,3 +54,9 @@ function initMap() {
 
         });
 }
+
+$(function() {
+  $('.reviews__btn').fancybox({
+    
+  });
+});

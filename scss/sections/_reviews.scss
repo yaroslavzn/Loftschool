@@ -102,6 +102,7 @@
 .reviews__more-info {
   padding: rem(30px) rem(20px);
   width: rem(550px);
+  display: none;
   border-radius: 5px;
   @include tablets {
     width: rem(470px);

@@ -702,36 +702,36 @@
       <section class="order">
         <div class="container">
           <div class="section-title">Закажите доставку</div>
-          <form  class="order-form">
+          <form  class="order-form" method="post" action="mail.php">
             <div class="order-form__right">
               <div class="order-form__row">
                 <div class="order-form__input-wrap order-form__input-wrap--half">
                   <label for="name">Имя</label>
-                  <input type="text" name="name" class="order-form__input" id="name">
+                  <input type="text" name="name" class="order-form__input" id="name" required>
                 </div>
                 <div class="order-form__input-wrap">
                   <label for="phone">Телефон</label>
-                  <input type="tel" name="phone" class="order-form__input" id="phone">
+                  <input type="tel" name="phone" class="order-form__input" id="phone" required>
                 </div>
               </div>
               <div class="order-form__row">
                 <div class="order-form__input-wrap">
                   <label for="street">Улица</label>
-                  <input type="text" name="street" class="order-form__input" id="street">
+                  <input type="text" name="street" class="order-form__input" id="street" required>
                 </div>
               </div>
               <div class="order-form__row">
                 <div class="order-form__input-wrap">
                   <label for="house">Дом</label>
-                  <input type="text" name="house" class="order-form__input" id="house">
+                  <input type="text" name="house" class="order-form__input" id="house" required>
                 </div>
                 <div class="order-form__input-wrap">
                   <label for="housing">Корпус</label>
-                  <input type="text" name="housing" class="order-form__input" id="housing">
+                  <input type="text" name="housing" class="order-form__input" id="housing" required>
                 </div>
                 <div class="order-form__input-wrap">
                   <label for="room">Квартира</label>
-                  <input type="text" name="room" class="order-form__input" id="room">
+                  <input type="text" name="room" class="order-form__input" id="room" required>
                 </div>
                 <div class="order-form__input-wrap">
                   <label for="floor">Этаж</label>
@@ -743,18 +743,18 @@
               <div class="order-form__row">
                 <div class="order-form__input-wrap">
                   <label for="comment">Комментарий</label>
-                  <textarea id="comment" class="order-form__comment"></textarea>
+                  <textarea id="comment" class="order-form__comment" name="comment-text"></textarea>
                 </div>
               </div>
               <div class="order-form__row">
                 <div class="order-form__input-wrap order-form__input-wrap--checks">
                   <label>
-                    <input type="radio" name="calculation" class="order-form__radio">
+                    <input type="radio" name="calculation" class="order-form__radio" value="Потребуется сдача">
                     <span class="fake-radio"></span>
                     <span class="label-text">Потребуется сдача</span>
                   </label>
                   <label>
-                    <input type="radio" name="calculation" class="order-form__radio" checked>
+                    <input type="radio" name="calculation" class="order-form__radio" checked value="Оплата по карте">
                     <span class="fake-radio"></span>
                     <span class="label-text">Оплата по карте</span>
                   </label>
@@ -763,14 +763,14 @@
               <div class="order-form__row">
                 <div class="order-form__input-wrap order-form__input-wrap--checks">
                   <label>
-                    <input type="checkbox" class="order-form__checkbox" checked>
+                    <input type="checkbox" class="order-form__checkbox" checked value="1">
                     <span class="fake-checkbox"></span>
                     <span class="label-text">Не перезванивать</span>
                   </label>
                 </div>
               </div>
               <div class="order-form__row order-form__row--btns">
-                <button type="button" class="order-btn order-form__btn">Заказать</button>
+                <button type="submit" class="order-btn order-form__btn">Заказать</button>
                 <button type="reset" class="order-form__reset">Очистить</button>
               </div>
             </div>
